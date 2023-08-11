@@ -1,0 +1,116 @@
+<!----------w----------
+    
+    Project 4 Reservation page
+    Name: Robinpreet Kaur Malhi
+    Date: August 11 2023
+    Description: Reservation page for Project 4
+
+----------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reserve a table</title>
+    <link rel="stylesheet" href="p4styles.css" />
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <main id="reservationContainer">
+        <!-----Header----->
+        <header id="header">
+            <img src="images/logo.jpg" alt="Taste Of India logo" id="restaurantLogo">
+            <h1 id="name">Taste of INDIA</h1>
+            <nav id="headerNav">
+                <span id="hamburger">&#9776;</span>
+                <ul id="navItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT US</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="reservation.html">RESERVE A TABLE</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-----Main Content----->
+        <div id="reservationContent">
+            <form id="reservationForm" method="get" action="index.html"> 
+                <fieldset>
+                    <legend><h1>Table reservation</h1></legend>
+                    <ul class="reservationGroup">
+                        <li>
+                            <label for="fullName">Full Name</label>
+                            <input id="fullName" name="fullName" type="text">
+                            <p class="error" id="fullName_error">* Required Field</p>
+                        </li>
+                        <li>
+							<label for="guests">Number of Guests</label>
+							<input id="guests" name="guests" type="number">
+							<p class="error" id="guests_error">* Required field</p>
+                            <p class="error" id="noGuests_Error">*Invalid Guest Number</p>
+						</li>
+                    </ul>
+                    <ul class="reservationGroup">    
+                        <li>
+							<label for="phoneNumber">Phone Number</label>
+							<input id="phoneNumber" name="phoneNumber" type="tel">
+							<p class="error" id="phoneNumber_error">* Required field</p>
+							<p class="error" id="phoneNumberFormat_error">
+								* Invalid phone number
+							</p>
+						</li>
+                        <li>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="text">
+							<p class="error" id="email_error">* Required field</p>
+							<p class="error" id="emailFormat_error">* Invalid email address</p>
+						</li>
+                    </ul>
+                    <ul class="reservationGroup">
+                        <li>
+							<label for="date">Date of Reservation</label>
+							<input id="date" name="date" type="date">
+							<p class="error" id="date_error">* Required field</p>
+							<p class="error" id="dateInvalid_error">* Invalid date</p>
+						</li>
+                        <li>
+							<label for="time">Time of Reservation</label>
+							<input id="time" name="time" type="time">
+							<p class="error" id="time_error">* Required field</p>
+							<p class="error" id="timeInvalid_error">* Invalid time</p>
+						</li>
+                    </ul>
+                    <ul class="reservationGroup">
+                        <li>
+							<label for="requirements">Special Requirements</label>
+							<textarea id="requirements" name="requirements" rows="4"></textarea>
+						</li>
+                    </ul>
+                    <ul class="reservationGroup">
+                        <li>
+							<p class="buttons">
+                                <button type="submit" id="submit">Reserve Now</button>
+                                <button type="reset" id="clear">Clear Details</button>
+                            </p>
+						</li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <!-----Footer----->
+        <footer>
+            <div id="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reserve a table</a></li>
+                    <li><a href="#bannerNav">Social Sites</a></li>
+                </ul>
+            </div>
+            <p id="copyright">copyright &copy; 2023 <a href="index.html">Taste Of INDIA</a></p>
+            <ol id="contact">
+                <li>Central Park West at 79th Street, New York, NY 10024-5192</li>
+                <li>+1 (421) 997-2134</li>
+            </ol>
+        </footer>
+    </main>
+</body>
+</html>

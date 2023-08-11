@@ -1,0 +1,553 @@
+/********w************
+    
+    Project 4 Stylesheet
+    Name: Robinpreet Kaur Malhi
+    Date: August 11 2023
+    Description: Styles for Project 4
+
+********************/
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+section,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/******************Index Page******************/
+    /*****Header Styling*****/
+    header{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    header img{
+        max-width: 80px;
+        height: auto;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    header ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    header ul li{
+        margin: 35px;
+        font-size: 15px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color:white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    header ul li a:hover{
+        background-color: white;
+        color: black;
+        transition: 0.1s;
+        border-radius: 10%;
+    }
+
+    header ul li:hover{
+        transform:scale(1.4);
+        transition: 0.5s;
+    }
+    
+    header div#headerNav li a:focus{
+        background-color: #302f2ff0;
+        color: white;
+        transition: 0.5s;
+    }
+
+    header span#hamburger{
+        display: none;
+    }
+
+    header h1#name{
+        display: none;
+    }
+
+    /*****Banner styling*****/
+    div#banner img#bannerImg{
+        max-width: 100%;
+    }
+
+    div#bannerNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%; 
+        padding: 0 20px;
+    }
+    
+    div#bannerNav ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0; 
+    }
+    
+    div#bannerNav ul li {
+        margin-right: 10px; 
+    }
+    
+    div#bannerNav ul#group2 {
+        margin-left: auto;
+    }
+
+    div#bannerNav ul img{
+        max-width: 30px;
+        height: auto;
+    }
+
+    div#bannerNav li a img:hover{
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
+    
+    div#bannerNav li a img:focus{
+        transform: scale(0);
+        transition: 0.5s;
+    }
+
+    /*****Main Content Styling****/
+    div#mainContent{
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url("images/bg1.jpg");
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    div#mainContent aside{
+        min-width:20%;
+        padding:10px;
+        padding-bottom: 1%;
+        margin: 5%;
+        color: black;
+        background-color: rgb(250, 229, 3);
+        border-radius: 10%;
+        text-align: center;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    div#mainContent aside ul{
+        list-style: none;
+    }
+
+    div#mainContent aside h1, div#mainContent article h1{
+        font-family: 'Montserrat', sans-serif;
+        padding:2%;
+    }
+
+    div#mainContent aside ul li, div#mainContent article p{
+        font-family: Verdana;
+    }
+
+    div#mainContent article h1{
+        text-align: center;
+    }
+
+    div#mainContent aside span{
+        color: rgb(69, 69, 69);
+    }
+
+    div#mainContent article span{
+        color: rgb(157, 135, 13);
+    }
+
+    div#mainContent article{
+        min-width: 50%;
+        padding:10px;
+        margin:5%;
+        background-color: white;
+        border-radius: 4%;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    /*****Footer Styling*****/
+    footer{
+        font-family: Verdana;
+        font-size: 11px;
+        background-color: black;
+        padding-top:1%;
+        padding-bottom:1%;
+        z-index: 100;
+    }
+
+    footer ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul li{
+        margin-right: 8px;
+        color: white;
+    }
+
+    footer ul li a{
+        text-decoration: none;
+        color:white;
+    }
+
+    footer div#footerNav li:not(:last-child)::after{
+        content:"\2022";
+        color:white;
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+    footer div#footerNav li a:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    
+    footer div#footerNav li a:focus{
+        background-color: #302f2ff0;
+        color: rgb(217, 222, 224);
+        transition: 0.5s;
+    }
+
+    footer p#copyright{
+        text-align: center;
+        color:white;
+    }
+
+    footer p#copyright a{
+        text-decoration: none;
+        color: #b66502;
+    }
+
+    footer p#copyright a:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    
+    footer p#copyright a:focus{
+        background-color: #302f2ff0;
+        color: rgb(217, 222, 224);
+        transition: 0.5s;
+    }
+
+    footer ol#contact{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ol li{
+        margin-right:8px;
+        color:white;
+    }
+
+    footer ol li:not(:last-child)::after{
+        content:"\2022";
+        color:white;
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+/******************Menu Page******************/
+    /*****Header*****/
+    div#menuPhrase{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(250, 229, 3);
+        align-items: center;
+        padding-top: 7%;
+    }
+
+    div#menuPhrase img#menuIcon{
+        max-width: 4%;
+        height: auto;
+    }
+
+    div#menuPhrase h1{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    /*****Main Menu Styling*****/
+    section#mainMenu h1.type{
+        text-align: center; 
+        padding-top:2%;
+        font-family: 'Montserrat', sans-serif;
+        font-size:30px;
+    }
+
+    section#mainMenu div.group1,div.group2{
+        display: flex;
+    }
+
+    section#mainMenu .item{
+        flex:1;
+        margin:2%;
+        font-family: Verdana;
+    }
+
+    section#mainMenu .item h2,h3{
+        text-align: center;
+    }
+
+    section#mainMenu img{
+        width:100%;
+    }
+
+    section#mainMenu div.even h1.type{
+        color:white;
+        text-decoration: underline;
+    }
+
+    section#mainMenu div.even{
+        background-color: black;
+    }
+
+    section#mainMenu div.even .item{
+        background-color: rgb(244, 217, 11);
+    }
+
+    section#mainMenu div.odd h1.type{
+        text-decoration: underline;
+    }
+
+    section#mainMenu div.odd{
+        background-color: rgb(244, 217, 11);
+    }
+
+    section#mainMenu div.odd .item{
+        background-color: white;
+    }
+
+    section#mainMenu .item:hover{
+        transform:scale(1.1);
+        transition: 1s;
+    }
+
+    /******************Reservation Page Styling******************/
+    div#reservationContent{
+        background-image: url('images/reservationBg.jpg');
+        background-size: 100% 100%;
+        padding:5%;
+    }
+
+    div#reservationContent form#reservationForm{
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin: 10% 10% 4% 10%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width:70%;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    form#reservationForm legend h1{
+        font-size: 18px;
+    }
+
+    form#reservationForm .error{
+        color:red;
+    }
+
+    div#reservationContent .reservationGroup{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    div#reservationContent .reservationGroup li{
+        flex: 1;
+        margin-right: 10px;
+        list-style: none;
+    }
+
+    div#reservationContent .reservationGroup li p.buttons{
+        text-align: center;
+    }
+
+    li p.buttons #submit,#clear{
+        border-radius: 10px;
+        margin: 0 5% 0 5%;
+        padding:1%;
+        background-color: #eca044;
+        font-size: 15px;
+    }
+    
+    div#reservationContent .reservationGroup label {
+        display: block; 
+    }
+    
+    div#reservationContent .reservationGroup input,textarea {
+        width: 70%; 
+    }
+
+    @media(max-width:980px){
+        /*****Header Styling*****/
+        header ul{
+            display: none;
+        }
+
+        header img{
+            max-width: 150px;
+            height: auto;
+            margin: 15px;
+        }
+
+        header span#hamburger{
+            cursor: pointer;
+            font-size: 50px;
+            display: block;
+            color:white;
+            margin:10px 20px 10px 10px;
+        }
+
+        header ul{
+           flex-direction: column;
+        }
+
+        header ul li{
+            margin: 0px 10px 5px 10px;
+            font-size: 50px;
+            padding:5px;
+        }
+
+        header ul li:hover{
+            transform:scale(1.1);
+            transition: 0.5s;
+        }
+        
+        header h1#name{
+            display:block;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+        }
+
+        /*****Banner Styling*****/
+        div#banner{
+            padding-top: 10%;
+        }
+
+        /*****Main Content Styling*****/
+        div#mainContent{
+            display: block;
+            padding-top: 2%;
+        }
+
+        div#mainContent aside{
+            margin-top: 0;
+        }
+
+        div#mainContent article{
+            margin-bottom: 0;
+        }
+
+        div#mainContent aside,article{
+            flex:none;
+            max-width: 100%;
+        }
+
+        /*****Footer Styling*****/
+        footer{
+            font-size: 28px;
+            padding:20px;
+        }
+
+        footer ul{
+            display:block;
+            text-align: center;
+        }
+
+        footer ol#contact{
+            display: block;
+            text-align: center;
+        }
+
+        footer ul li, footer p, footer ol{
+            margin:5px;
+        }
+
+        footer div#footerNav li:not(:last-child)::after{
+            content:"";
+        }
+
+        /*****Menu page*****/
+        div#menuPhrase{
+            padding-top: 20%;
+            font-size: 20px;
+        }
+
+        div#menuPhrase img#menuIcon{
+            max-width: 10%;
+            height: auto;
+            margin-left:6%;
+        }
+
+        section#mainMenu div.group1, div.group2 {
+        display: block;
+        }
+
+        section#mainMenu .item:hover{
+            transform:none;
+        }
+
+        /******Reservation Form*****/
+        div#reservationContent{
+            padding:20% 8% 10% 13%;
+            font-size: 35px;
+        }
+
+        div#reservationContent form#reservationForm input,label{
+            width:80%;
+            height: 60px;
+        }
+
+        form#reservationForm legend h1{
+            font-size: 30px;
+        }
+
+        input{
+            font-size: 30px;
+        }
+
+        div#reservationContent .reservationGroup{
+            display: block;
+        }
+
+        li p.buttons #submit,#clear{
+            border-radius: 10px;
+            margin: 4% 0 4% 0;
+            padding:2%;
+            background-color: #eca044;
+            font-size: 35px;
+            width:100%;
+        }
+    }
